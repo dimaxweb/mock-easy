@@ -38,21 +38,20 @@ routeKeys.forEach(function(key, idx) {
 
 
 function mockStaticFiles(req, res, next) {
-  console.log('req.url', req.url);
+  console.log('req path', req.originalUrl);
   var matchedJson = null;
   var matchedMock = null;
-
-  for (var path in mocks) {
-    if (mocks.hasOwnProperty(path)) {
-      var pathIdx = Object.keys(mocks).indexOf(path);
-      if (new RegExp(routeKeys[pathIdx]).test(req.url)) {
-        matchedMock = mocks[path];
+  for (var mocksKey in mocks) {
+    if (mocks.hasOwnProperty(mocksKey)) {
+      var pathIdx = Object.keys(mocks).indexOf(mocksKey);
+      if (new RegExp(routeKeys[pathIdx]).test(req.originalUrl)) {
+        matchedMock = mocks[mocksKey];
         console.log('Returning mock json: ' + req.url);
         var mockJson = lodash.get(matchedMock, + req.method + '.response',null);
         if (!mockJson){
           mockJson = matchedMock.mockJson;
         }
-        matchedJson = fs.readFileSync('./mocks/' + mockJson + '.json', 'utf8');
+        matchedJson = fs.readFileSync(path.join(__dirname, 'mocks',mockJson + '.json'), 'utf8');
         if (matchedMock.randomizeData) {
           matchedJson = JSON.stringify(matchedMock.randomizeData(req, matchedJson));
         }
