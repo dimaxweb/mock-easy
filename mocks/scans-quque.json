@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "stage": {
+      "id": 7,
+      "value": "Finished"
+    },
+    "stageDetails": "Stage # 23 of 33",
+    "stepDetails": "Stage # 23 of 33",
+    "project": {
+      "id": 1,
+      "name": "LocalProject",
+      "link": {
+        "rel": "project",
+        "uri": "/projects/2"
+      }
+    },
+    "engine": {
+      "id": 1,
+      "link": {
+        "rel": "engine-server",
+        "uri": "/sast/engineServers/1"
+      }
+    },
+    "languages": [
+      {
+        "id": 2,
+        "name": "Java"
+      },
+      {
+        "id": 8,
+        "name": "JavaScript"
+      }
+    ],
+    "teamId": "00000000-3333-1111-b111-989c9070eb11",
+    "dateCreated": "2018-01-08T12:16:38.293",
+    "queuedOn": "2018-01-08T12:16:55.587",
+    "engineStartedOn": "2018-01-08T12:17:13.73",
+    "completedOn": "2018-01-08T12:19:13.73",
+    "loc": 2700,
+    "isIncremental": false,
+    "isPublic": true,
+    "origin": "Web Portal",
+    "queuePosition": 1,
+    "totalPercent": 2,
+    "stagePercent": 31,
+    "initiator": "userName"
+  }
+]

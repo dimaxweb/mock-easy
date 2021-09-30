@@ -1,0 +1,18 @@
+{
+  "id": 20,
+  "name": "Localhost",
+  "uri":
+  "http://Localhost/CxSourceAnalyzerEngineWCF/CxEngineWebServices.svc",
+  "minLoc": 0,
+  "maxLoc": 999999999,
+  "maxScans": 2,
+  "cxVersion": "8.6.0.1921",
+  "status": {
+    "id": 4,
+    "value": "Busy"
+  },
+  "link": {
+    "rel": "self",
+    "uri": "/sast/engineServers/1"
+  }
+}

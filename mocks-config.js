@@ -2,7 +2,7 @@ var lodash  = require('lodash');
 
 var generateLoadingData = true;
 
-function randomDate(start, end) {
+function getRandomDate(start, end) {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 }
 
@@ -33,27 +33,42 @@ function cloneContent(response, times) {
 
 module.exports = {
 
-    '/Mercury-O/public/rest/dashboard/hostStates': {mockJson: 'dashboard/dashboard.hostStates', delay: 300, randomizeData: function(req, response) {
+    '/sast/scans-statistics': {mockJson: 'sast-statistics', delay: 100, randomizeData: function(req, response) {
             var data = JSON.parse(response);
             return data;
-        }},
+     }},
+    '/sast/scans': {mockJson: 'sast-scans', delay: 100, randomizeData: function(req, response) {
+            var data = JSON.parse(response);
+            lodash.each(data, (scanData) => {
+                let scanDates = lodash.get(scanData,'dateAndTime');
+
+                let startDate  = new Date();
+                let endDate = new Date();
+                endDate.setDate(startDate.getHours() + 1);
+                lodash.set(scanDates, 'startedOn', getRandomDate(startDate, endDate));
+
+                let startDateEnded  = endDate;
+                let endDateEnded = new Date();
+                endDateEnded.setDate(startDate.getHours() + 2);
+                lodash.set(scanDates, 'finishedOn', getRandomDate(startDateEnded, endDateEnded));
+            });
+
+            return data;
+     }},
+    '/sast/engineServers': {mockJson: 'sast-engineServers', delay: 100, randomizeData: function(req, response) {
+            var data = JSON.parse(response);
+            return data;
+    }},
+
+    '/sast/engineServersDetails/*': {mockJson: 'sast-engineServer-details', delay: 100, randomizeData: function(req, response) {
+            var data = JSON.parse(response);
+            return data;
+     }},
 
 
-// Compass
-    '/compass/security/public/auth/login': {
-        mockJson: 'login',
-        methods: {
-            'GET': {response: 'login'},
-            'POST': {
-                response: 'loginPostResponse'
+    '/sast/scans-quque': {mockJson: 'sast-quque', delay: 100, randomizeData: function(req, response) {
+            var data = JSON.parse(response);
+            return data;
+     }}
 
-            },
-            'DELETE' :{
-
-            },
-            'PUT' :{
-
-            }
-        }
-    }
 };

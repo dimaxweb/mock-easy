@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1000000,
+    "project": {
+      "id": 1,
+      "name": "Project 1 (CxTechDocs)",
+      "link": null
+    },
+    "status": {
+      "id": 7,
+      "name": "Finished",
+      "details": {
+        "stage": "",
+        "step": ""
+      }
+    },
+    "scanType": {
+      "id": 1,
+      "value": "Regular"
+    },
+    "comment": "",
+    "dateAndTime": {
+      "startedOn": "2018-06-18T00:59:15.407",
+      "finishedOn": "2018-06-18T01:09:12.707",
+      "engineStartedOn": "2018-06-18T00:59:15.407",
+      "engineFinishedOn": "2018-06-18T01:09:11.443"
+    },
+    "resultsStatistics": {
+      "link": null
+    },
+    "scanState": {
+      "path": " N/A (Zip File)",
+      "sourceId": "0000000189_001556351823_00-432903868",
+      "filesCount": 189,
+      "linesOfCode": 33594,
+      "failedLinesOfCode": 0,
+      "cxVersion": "8.8.0.1351",
+      "languageStateCollection": [
+        {
+          "languageID": 1073741824,
+          "languageName": "Common",
+          "languageHash": "1168085659085622",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 2,
+          "languageName": "Java",
+          "languageHash": "6487237970207034",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 8,
+          "languageName": "JavaScript",
+          "languageHash": "3602822811217894",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 262144,
+          "languageName": "Typescript",
+          "languageHash": "1939975091058023",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 64,
+          "languageName": "VbScript",
+          "languageHash": "1349101913133594",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        }
+      ]
+    },
+    "owner": "admin@cx",
+    "origin": "Web Portal",
+    "initiatorName": "admin admin",
+    "owningTeamId": "00000000-1111-1111-b111-989c9070eb11",
+    "isPublic": true,
+    "isLocked": false,
+    "isIncremental": false,
+    "scanRisk": 100,
+    "scanRiskSeverity": 100,
+    "engineServer": {
+      "id": 1,
+      "name": "Localhost",
+      "link": null
+    },
+    "finishedScanStatus": {
+      "id": 0,
+      "value": "None"
+    },
+    "partialScanReasons": null
+  },
+  {
+    "id": 1000002,
+    "project": {
+      "id": 1,
+      "name": "Project 1 (CxTechDocs)",
+      "link": null
+    },
+    "status": {
+      "id": 7,
+      "name": "Finished",
+      "details": {
+        "stage": "",
+        "step": ""
+      }
+    },
+    "scanType": {
+      "id": 1,
+      "value": "Regular"
+    },
+    "comment": "",
+    "dateAndTime": {
+      "startedOn": "2018-06-18T00:59:15.407",
+      "finishedOn": "2018-06-18T01:09:12.707",
+      "engineStartedOn": "2018-06-18T00:59:15.407",
+      "engineFinishedOn": "2018-06-18T01:09:11.443"
+    },
+    "resultsStatistics": {
+      "link": null
+    },
+    "scanState": {
+      "path": " N/A (Zip File)",
+      "sourceId": "0000000189_001556351823_00-432903868",
+      "filesCount": 189,
+      "linesOfCode": 33594,
+      "failedLinesOfCode": 0,
+      "cxVersion": "8.8.0.1351",
+      "languageStateCollection": [
+        {
+          "languageID": 1073741824,
+          "languageName": "Common",
+          "languageHash": "1168085659085622",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 2,
+          "languageName": "Java",
+          "languageHash": "6487237970207034",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 8,
+          "languageName": "JavaScript",
+          "languageHash": "3602822811217894",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 262144,
+          "languageName": "Typescript",
+          "languageHash": "1939975091058023",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        },
+        {
+          "languageID": 64,
+          "languageName": "VbScript",
+          "languageHash": "1349101913133594",
+          "stateCreationDate": "2018-06-17T07:30:33.443"
+        }
+      ]
+    },
+    "owner": "admin@cx",
+    "origin": "Web Portal",
+    "initiatorName": "admin admin",
+    "owningTeamId": "00000000-1111-1111-b111-989c9070eb11",
+    "isPublic": true,
+    "isLocked": false,
+    "isIncremental": false,
+    "scanRisk": 100,
+    "scanRiskSeverity": 100,
+    "engineServer": {
+      "id": 1,
+      "name": "Localhost",
+      "link": null
+    },
+    "finishedScanStatus": {
+      "id": 0,
+      "value": "None"
+    },
+    "partialScanReasons": null
+  }
+]

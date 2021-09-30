@@ -50,6 +50,6 @@ function mockStaticFiles(req, res, next) {
 }
 
 /* GET home page. */
-router.('*', mockStaticFiles);
+router('*', mockStaticFiles);
 
 module.exports = router;

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "teamId": 0,
+    "name": "string",
+    "isPublic": true,
+    "sourceSettingsLink": {
+      "type": "string",
+      "rel": "string",
+      "uri": "string"
+    },
+    "link": {
+      "rel": "string",
+      "uri": "string"
+    }
+  }
+]
