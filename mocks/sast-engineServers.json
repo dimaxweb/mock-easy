@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Localhost",
-    "uri": "http://Localhost/CxSourceAnalyzerEngineWCF/CxEngineWebServices.svc",
+    "uri": "http://Localhost/server1",
     "minLoc": 0,
     "maxLoc": 999999999,
     "maxScans": 3,
@@ -19,7 +19,7 @@
   {
     "id": 2,
     "name": "Localhost",
-    "uri": "http://Localhost/CxSourceAnalyzerEngineWCF/CxEngineWebServices.svc",
+    "uri": "http://Localhost/server2",
     "minLoc": 0,
     "maxLoc": 999999999,
     "maxScans": 3,

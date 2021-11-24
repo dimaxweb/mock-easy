@@ -60,13 +60,18 @@ module.exports = {
             return data;
     }},
 
-    '/sast/engineServersDetails/*': {mockJson: 'sast-engineServer-details', delay: 100, randomizeData: function(req, response) {
+    '/sast/server1': {mockJson: 'sast-server1', delay: 100, randomizeData: function(req, response) {
             var data = JSON.parse(response);
             return data;
      }},
 
+    '/sast/server2': {mockJson: 'sast-server2', delay: 100000, randomizeData: function(req, response) {
+            var data = JSON.parse(response);
+            return data;
+    }},
 
-    '/sast/scans-quque': {mockJson: 'sast-quque', delay: 100, randomizeData: function(req, response) {
+
+    '/sast/scans-quque': {mockJson: 'sast-server2', delay: 100000, randomizeData: function(req, response) {
             var data = JSON.parse(response);
             return data;
      }}
